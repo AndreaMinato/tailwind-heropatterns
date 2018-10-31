@@ -1,18 +1,23 @@
 const _ = require("lodash");
+const heros = require("./patterns");
+
+const defaultColors = {
+  default: "9C92AC"
+};
+const defaultOpacity = {
+  default: 0.4
+};
 
 module.exports = function({
   variants = [],
   patterns = [],
-  colors = {
-    default: "9C92AC"
-  },
-  opacity = {
-    default: 0.4
-  }
+  colors = defaultColors,
+  opacity = defaultOpacity
 }) {
   return function({ e, addUtilities }) {
-    const heros = require("./patterns");
     if (patterns.length === 0) patterns = Object.keys(heros);
+    if (Object.keys(colors).length === 0) colors = defaultColors;
+    if (Object.keys(opacity).length === 0) opacity = defaultOpacity;
 
     const newUtilities = _.map(opacity, (alpha, opacityName) => {
       return _.map(colors, (color, colorName) => {
