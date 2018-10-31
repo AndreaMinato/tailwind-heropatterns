@@ -1,6 +1,6 @@
 {
   "name": "tailwind-heropatterns",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Streamlined integration between tailwindcss and heropatterns",
   "main": "index.js",
   "scripts": {},
