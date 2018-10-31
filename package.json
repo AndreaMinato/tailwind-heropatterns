@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/AndreaMinato/tailwind-heropatterns/issues"
   },
-  "homepage": "https://github.com/AndreaMinato/tailwind-heropatterns#readme"
+  "homepage": "https://github.com/AndreaMinato/tailwind-heropatterns#readme",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
 }
