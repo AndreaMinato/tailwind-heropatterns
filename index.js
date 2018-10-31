@@ -2,7 +2,7 @@ const _ = require("lodash");
 const heros = require("./patterns");
 
 const defaultColors = {
-  default: "9C92AC"
+  default: "#9C92AC"
 };
 const defaultOpacity = {
   default: 0.4
@@ -21,6 +21,7 @@ module.exports = function({
 
     const newUtilities = _.map(opacity, (alpha, opacityName) => {
       return _.map(colors, (color, colorName) => {
+        color = color.replace("#", "%23");
         return patterns.reduce((o, patternName) => {
           let className = `bg-hero-${patternName}`;
           if (colorName != "default") className += `-${colorName}`;
