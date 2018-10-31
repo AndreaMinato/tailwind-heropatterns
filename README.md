@@ -28,8 +28,8 @@ require("tailwind-heropatterns")({
 
   // The foreground colors of the pattern
   colors: {
-    default: "9C92AC",
-    "blue-dark": "000044"
+    default: "#9C92AC",
+    "blue-dark": "#000044" //also works with rgb(0,0,205)
   },
 
   // The foreground opacity
@@ -85,7 +85,7 @@ require("tailwind-heropatterns")({
   variants: [],
   patterns: ["polka-dots", "signal"],
   colors: {
-    default: "9C92AC"
+    default: "#9C92AC"
   },
   opacities: {
     default: "0.4"
@@ -114,7 +114,7 @@ config = {
   variants: [],
   patterns: [],
   colors: {
-    default: "9C92AC"
+    default: "#9C92AC"
   },
   opacity: {
     default: 0.4
