@@ -33,7 +33,7 @@ require("tailwind-heropatterns")({
   },
 
   // The foreground opacity
-  opacities: {
+  opacity: {
     default: "0.4",
     "100": "1.0"
   }
@@ -87,7 +87,7 @@ require("tailwind-heropatterns")({
   colors: {
     default: "#9C92AC"
   },
-  opacities: {
+  opacity: {
     default: "0.4"
   }
 });
