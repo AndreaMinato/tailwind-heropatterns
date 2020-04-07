@@ -35,16 +35,12 @@ module.exports = function({
     if (Object.keys(opacity).length === 0) opacity = defaultOpacity;
 
     if (includeThemeColors) {
-      colors = {...colors, ...flattenThemeColors(theme('colors')) };
+      colors = {...colors, ...flattenThemeColors(theme("colors")) };
     }
 
     const newUtilities = _.map(opacity, (alpha, opacityName) => {
       return _.map(colors, (color, colorName) => {
-        try {
-          color = color.replace("#", "%23");
-        } catch (ex) {
-          throw new Error(JSON.stringify(color));
-        }
+        color = color.replace("#", "%23");
         return patterns.reduce((o, patternName) => {
           let className = `bg-hero-${patternName}`;
           if (colorName != "default") className += `-${colorName}`;
